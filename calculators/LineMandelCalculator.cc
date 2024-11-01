@@ -19,6 +19,7 @@ LineMandelCalculator::LineMandelCalculator (unsigned matrixBaseSize, unsigned li
 	BaseMandelCalculator(matrixBaseSize, limit, "LineMandelCalculator")
 {
 	// @TODO allocate & prefill memory
+	// TODO hello
 }
 
 LineMandelCalculator::~LineMandelCalculator() {
