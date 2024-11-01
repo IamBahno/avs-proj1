@@ -37,15 +37,16 @@ int * LineMandelCalculator::calculateMandelbrot () {
 	float *real_array = real_arr;
 	float *img_array = img_arr;
 
-	for (int i = 0; i < height / 2; i++)
+	//computint only for half of the picture
+	for (int i = 0; i < height/2; i++)
 	{
 		float y = y_start + i * dy; // current imaginary value
 
 		// variable that allows me to break when all the point in row, breaken out of the < 4 boundary
-		bool all_over = false;
+		int is_running = 0;
 		for (int k = 0; k < limit; ++k)
 		{
-			#pragma omp simd reduction(| : all_over)
+			#pragma omp simd reduction(+:is_running)
 			for (int j = 0; j < width; j++)
 			{
 				float x = x_start + j * dx; // current real value
@@ -61,20 +62,20 @@ int * LineMandelCalculator::calculateMandelbrot () {
 					pdata[i*width+j] += 1;
 					img_array[j] = 2.0f * zReal * zImag + y;
 					real_array[j] = r2 - i2 + x;
-					all_over |= false;
+					is_running += 1;
 				}
 			}
-			if(all_over){
+			if(is_running != width){
 				break;
 			}
 		}
 	}
 
 	//duplicate the second half of the matrix
-    for (int i = 0; i < height / 2; i++) {
-        for (int j = 0; j < width; j++) {
-            pdata[(height - 1 - i) * width + j] = pdata[i * width + j];
-        }
-    }
+	for (int i = 0; i < height / 2; i++) {
+		for (int j = 0; j < width; j++) {
+			pdata[(height - 1 - i) * width + j] = pdata[i * width + j];
+		}
+	}
 	return pdata;
 }

@@ -2050,67 +2050,67 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 15 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 15 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 29 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 29 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            icmp
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                        Column: 22 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 14 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2119,7 +2119,34 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 65, 
+                   Column: 17 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressCondExecuted
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 65, 
+                   Column: 17 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to hoist load with loop-invariant address because load is conditionally executed
+...
+--- !Passed
+Pass:            licm
+Name:            PromoteLoopAccessesToScalar
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 65, 
+                   Column: 17 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          Moving accesses to memory location out of the loop
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 14 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2149,6 +2176,13 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
                    Column: 4 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
@@ -2158,19 +2192,19 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
                    Column: 24 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
                        Column: 24 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
                    Column: 24 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2179,56 +2213,72 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 15 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 15 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 29 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 29 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
                    Column: 4 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -2245,31 +2295,31 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            InstSunk
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'sinking '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2278,49 +2328,49 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                    Column: 13 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                        Column: 13 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                    Column: 13 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                        Column: 13 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 43, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 42, 
                        Column: 27 }
 ...
 --- !Passed
@@ -2347,31 +2397,31 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
                    Column: 24 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
                        Column: 24 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 15 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2380,19 +2430,19 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 29 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2401,7 +2451,106 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'hoisting '
+  - Inst:            xor
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 22 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2411,130 +2560,31 @@ Args:
 Pass:            licm
 Name:            Hoisted
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'hoisting '
-  - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Passed
-Pass:            licm
-Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 31 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'hoisting '
-  - Inst:            xor
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 31 }
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Passed
-Pass:            licm
-Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'hoisting '
-  - Inst:            getelementptr
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Passed
-Pass:            licm
-Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                       Column: 25 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                       Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 32 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            sdiv
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                       Column: 32 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                       Column: 29 }
 ...
 --- !Passed
 Pass:            loop-delete
 Name:            Invariant
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 5 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 2 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          Loop deleted because it is invariant
@@ -2555,13 +2605,13 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2570,13 +2620,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2585,52 +2635,21 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
---- !Missed
+--- !Passed
 Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
+Name:            LoadPRE
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
                    Column: 24 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 14 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
+  - String:          load eliminated by PRE
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                   Column: 14 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
-                   Column: 4 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -2648,242 +2667,7 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                   Column: 23 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                       Column: 23 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Passed
-Pass:            gvn
-Name:            LoadPRE
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                   Column: 23 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          load eliminated by PRE
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                   Column: 22 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Passed
-Pass:            gvn
-Name:            LoadPRE
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                   Column: 22 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          load eliminated by PRE
-...
---- !Passed
-Pass:            gvn
-Name:            LoadElim
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' eliminated'
-  - String:          ' in favor of '
-  - InfavorOfValue:  phi
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                       Column: 25 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Passed
-Pass:            gvn
-Name:            LoadElim
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' eliminated'
-  - String:          ' in favor of '
-  - InfavorOfValue:  phi
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Passed
-Pass:            gvn
-Name:            LoadPRE
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          load eliminated by PRE
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                   Column: 23 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                       Column: 23 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
-                   Column: 15 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 14 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 14 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2892,18 +2676,249 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
                        Column: 24 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
+                   Column: 4 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
-                   Column: 4 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                       Column: 22 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  phi
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadPRE
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          load eliminated by PRE
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
+                   Column: 15 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
+                       Column: 20 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
+                   Column: 29 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
+                       Column: 20 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -2921,6 +2936,44 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                   Column: 14 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
@@ -2934,13 +2987,13 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -2949,33 +3002,37 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
   - Type:            ''
   - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -2983,37 +3040,198 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
+                   Column: 15 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
+                       Column: 20 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
   - Type:            ''
   - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
+                       Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
+                       Column: 4 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
+                       Column: 4 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                   Column: 14 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -3022,16 +3240,35 @@ Args:
   - String:          ' in favor of '
   - OtherAccess:     load
     DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 20 }
+                       Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 14 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3040,8 +3277,6 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -3049,17 +3284,8 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 48, 
-                   Column: 4 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                   Column: 23 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -3076,7 +3302,16 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3085,7 +3320,7 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3094,7 +3329,16 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                   Column: 24 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3103,8 +3347,17 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -3113,16 +3366,7 @@ Args:
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -3352,7 +3596,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -3371,7 +3615,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -3390,7 +3634,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -3409,13 +3653,13 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3424,13 +3668,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3439,13 +3683,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3454,13 +3698,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3469,13 +3713,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3484,13 +3728,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3499,13 +3743,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3514,13 +3758,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3529,73 +3773,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
 ...
 --- !Passed
 Pass:            gvn
 Name:            LoadElim
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 14 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3603,14 +3787,12 @@ Args:
   - Type:            ''
   - String:          ' eliminated'
   - String:          ' in favor of '
-  - InfavorOfValue:  load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
+  - InfavorOfValue:  phi
 ...
 --- !Passed
 Pass:            gvn
 Name:            LoadElim
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 14 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3618,14 +3800,12 @@ Args:
   - Type:            ''
   - String:          ' eliminated'
   - String:          ' in favor of '
-  - InfavorOfValue:  load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
+  - InfavorOfValue:  phi
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                    Column: 19 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3634,13 +3814,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                    Column: 19 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3649,13 +3829,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                    Column: 19 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3664,13 +3844,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 55, 
                    Column: 34 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3679,13 +3859,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 55, 
                    Column: 34 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3694,13 +3874,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 55, 
                    Column: 34 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3709,8 +3889,84 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
@@ -3728,7 +3984,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -3747,7 +4003,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -3766,7 +4022,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -3785,13 +4041,13 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3800,17 +4056,17 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3819,17 +4075,17 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3838,17 +4094,17 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -3857,16 +4113,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -3874,88 +4132,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Passed
 Pass:            gvn
 Name:            LoadPRE
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          load eliminated by PRE
@@ -3963,8 +4151,8 @@ Args:
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -3974,14 +4162,33 @@ Args:
   - OtherAccess:     load
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -3989,18 +4196,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4008,56 +4215,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 20 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4066,17 +4235,17 @@ Args:
   - String:          ' in favor of '
   - OtherAccess:     load
     DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 20 }
+                       Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4084,18 +4253,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4104,17 +4273,17 @@ Args:
   - String:          ' in favor of '
   - OtherAccess:     load
     DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 20 }
+                       Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4122,18 +4291,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4141,18 +4310,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4160,18 +4329,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4179,12 +4348,31 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
@@ -4202,26 +4390,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                   Column: 23 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                       Column: 23 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -4240,7 +4409,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -4259,13 +4428,32 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4274,13 +4462,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4289,13 +4477,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4304,13 +4492,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4319,13 +4507,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4334,13 +4522,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4349,13 +4537,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4364,13 +4552,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4379,73 +4567,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
-                       Column: 23 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                    Column: 19 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4454,13 +4582,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                    Column: 19 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4469,13 +4597,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 53, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
                    Column: 19 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4484,13 +4612,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 55, 
                    Column: 34 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4499,13 +4627,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 55, 
                    Column: 34 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4514,13 +4642,13 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 54, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 55, 
                    Column: 34 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4529,8 +4657,84 @@ Args:
   - String:          ' not eliminated'
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 64, 
                        Column: 20 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                       Column: 24 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+                       Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
@@ -4548,7 +4752,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -4567,7 +4771,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -4586,7 +4790,7 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
@@ -4605,13 +4809,13 @@ Args:
                        Column: 23 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4620,17 +4824,17 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4639,17 +4843,17 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4658,17 +4862,17 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -4677,16 +4881,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                        Column: 23 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4694,16 +4900,16 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4711,16 +4917,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4728,16 +4936,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4745,18 +4955,94 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                       Column: 24 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
   - String:          ' because it is clobbered by '
-  - ClobberedBy:     call
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
-                       Column: 20 }
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                       Column: 23 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     load
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 11 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4764,35 +5050,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4800,37 +5069,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 20 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4838,37 +5088,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
+                       Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 20 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            gvn
 Name:            LoadClobbered
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'load of type '
@@ -4876,113 +5107,18 @@ Args:
   - String:          ' not eliminated'
   - String:          ' in favor of '
   - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                       Column: 29 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 20 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                        Column: 22 }
   - String:          ' because it is clobbered by '
   - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
-...
---- !Missed
-Pass:            gvn
-Name:            LoadClobbered
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'load of type '
-  - Type:            ''
-  - String:          ' not eliminated'
-  - String:          ' in favor of '
-  - OtherAccess:     load
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
-                       Column: 22 }
-  - String:          ' because it is clobbered by '
-  - ClobberedBy:     store
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 49 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 40 }
 ...
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'Cannot SLP vectorize list: vectorization was impossible'
@@ -4991,8 +5127,8 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotBeneficial
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 49 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 40 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'List vectorization was possible but not beneficial with cost '
@@ -5003,8 +5139,8 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotBeneficial
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 49 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 40 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'List vectorization was possible but not beneficial with cost '
@@ -5015,8 +5151,8 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotBeneficial
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 49 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 40 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'List vectorization was possible but not beneficial with cost '
@@ -5035,8 +5171,8 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotBeneficial
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 51 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 42 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'List vectorization was possible but not beneficial with cost '
@@ -5047,8 +5183,8 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotBeneficial
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 49 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 40 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'List vectorization was possible but not beneficial with cost '
@@ -5059,8 +5195,8 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotBeneficial
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 49 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 40 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'List vectorization was possible but not beneficial with cost '
@@ -5089,7 +5225,25 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5099,7 +5253,7 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5109,7 +5263,7 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5119,7 +5273,7 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5129,7 +5283,7 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5139,7 +5293,7 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5149,7 +5303,7 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5159,7 +5313,7 @@ Args:
 --- !Missed
 Pass:            slp-vectorizer
 Name:            NotPossible
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 61, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5185,190 +5339,181 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            fmul
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 49, 
-                   Column: 24 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                    Column: 42 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                        Column: 42 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                    Column: 42 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                        Column: 42 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                    Column: 42 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                        Column: 42 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                    Column: 42 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 62, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 63, 
                        Column: 42 }
 ...
 --- !Passed
@@ -5398,176 +5543,176 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            fmul
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 27 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 27 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                        Column: 23 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            fmul
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            insertelement
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            shufflevector
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 57, 
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 58, 
                        Column: 22 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
-                   Column: 23 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 68, 
+                   Column: 21 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5584,7 +5729,16 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 15 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5593,7 +5747,7 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 51, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 52, 
                    Column: 29 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5602,7 +5756,16 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 50, 
+                   Column: 24 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
@@ -5611,20 +5774,29 @@ Args:
 --- !Passed
 Pass:            licm
 Name:            Hoisted
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 31 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          'hoisting '
   - Inst:            xor
-    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                       Column: 31 }
+    DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                       Column: 22 }
 ...
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
+                   Column: 23 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5633,7 +5805,7 @@ Args:
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5641,26 +5813,8 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
-...
---- !Missed
-Pass:            licm
-Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5669,7 +5823,7 @@ Args:
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5677,8 +5831,8 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
-                   Column: 29 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5687,7 +5841,7 @@ Args:
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
 DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 76, 
-                   Column: 20 }
+                   Column: 23 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5695,8 +5849,17 @@ Args:
 --- !Missed
 Pass:            licm
 Name:            LoadWithLoopInvariantAddressInvalidated
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 25 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 77, 
+                   Column: 11 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 22 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - String:          failed to move load with loop-invariant address because the loop may invalidate its value
@@ -5922,8 +6085,8 @@ Args:
 --- !Missed
 Pass:            regalloc
 Name:            LoopSpillReloadCopies
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 74, 
-                   Column: 5 }
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 75, 
+                   Column: 2 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
   - NumVRCopies:     '1'
@@ -5939,22 +6102,22 @@ DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 46,
                    Column: 3 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
-  - NumVRCopies:     '5'
+  - NumVRCopies:     '2'
   - String:          ' virtual registers copies '
-  - TotalCopiesCost: '4.000000e+02'
+  - TotalCopiesCost: '2.590476e+02'
   - String:          ' total copies cost '
   - String:          generated in loop
 ...
 --- !Missed
 Pass:            regalloc
 Name:            LoopSpillReloadCopies
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 41, 
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 40, 
                    Column: 2 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
-  - NumVRCopies:     '6'
+  - NumVRCopies:     '3'
   - String:          ' virtual registers copies '
-  - TotalCopiesCost: '4.160000e+02'
+  - TotalCopiesCost: '2.750476e+02'
   - String:          ' total copies cost '
   - String:          generated in loop
 ...
@@ -5965,9 +6128,9 @@ DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 35,
                    Column: 1 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
-  - NumVRCopies:     '7'
+  - NumVRCopies:     '4'
   - String:          ' virtual registers copies '
-  - TotalCopiesCost: '4.240000e+02'
+  - TotalCopiesCost: '2.830476e+02'
   - String:          ' total copies cost '
   - String:          generated in function
 ...
@@ -5978,7 +6141,7 @@ DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 35,
                    Column: 0 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
-  - NumStackBytes:   '16'
+  - NumStackBytes:   '24'
   - String:          ' stack bytes in function '''
   - Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
   - String:          ''''
@@ -6010,7 +6173,7 @@ Args:
   - String:          "\n"
   - String:          ''
   - String:          ': '
-  - INST_:           '13'
+  - INST_:           '14'
   - String:          "\n"
 ...
 --- !Analysis
@@ -6055,7 +6218,172 @@ Args:
   - String:          "\n"
   - String:          ''
   - String:          ': '
-  - INST_:           '3'
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '11'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '29'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '26'
   - String:          "\n"
 ...
 --- !Analysis
@@ -6085,82 +6413,7 @@ Args:
   - String:          "\n"
   - String:          ''
   - String:          ': '
-  - INST_:           '2'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '36'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
   - INST_:           '1'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '1'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '3'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '3'
   - String:          "\n"
 ...
 --- !Analysis
@@ -6190,142 +6443,7 @@ Args:
   - String:          "\n"
   - String:          ''
   - String:          ': '
-  - INST_:           '4'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '3'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '28'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '2'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '1'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '2'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '4'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '25'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '3'
-  - String:          "\n"
-...
---- !Analysis
-Pass:            asm-printer
-Name:            InstructionMix
-DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
-                   Column: 0 }
-Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
-Args:
-  - String:          'BasicBlock: '
-  - BasicBlock:      ''
-  - String:          "\n"
-  - String:          ''
-  - String:          ': '
-  - INST_:           '1'
+  - INST_:           '38'
   - String:          "\n"
 ...
 --- !Analysis
@@ -6356,6 +6474,66 @@ Args:
   - String:          ''
   - String:          ': '
   - INST_:           '32'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 0, 
+                   Column: 0 }
+Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
   - String:          "\n"
 ...
 --- !Analysis
@@ -6550,7 +6728,7 @@ Args:
   - String:          "\n"
   - String:          ''
   - String:          ': '
-  - INST_:           '2'
+  - INST_:           '3'
   - String:          "\n"
 ...
 --- !Analysis
@@ -6575,7 +6753,7 @@ DebugLoc:        { File: 'calculators/LineMandelCalculator.cc', Line: 35,
                    Column: 0 }
 Function:        _ZN20LineMandelCalculator19calculateMandelbrotEv
 Args:
-  - NumInstructions: '284'
+  - NumInstructions: '319'
   - String:          ' instructions in function'
 ...
 --- !Analysis
