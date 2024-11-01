@@ -95,6 +95,14 @@ LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculato
         LOOP END
     LOOP END
 LOOP END
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (74, 5)
+
+    LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (75, 9)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        remark #25478: While loop unrolled by 4
+    LOOP END
+LOOP END
 =================================================================
 
 Global optimization report for : _GLOBAL__sub_I_LineMandelCalculator.cc
@@ -193,6 +201,8 @@ DEAD STATIC FUNC: llvm.directive.region.exit
 
 DEAD STATIC FUNC: llvm.ssa.copy.f32
 
+DEAD STATIC FUNC: llvm.ssa.copy.i32
+
 DEAD STATIC FUNC: llvm.ssa.copy.i64
 
 DEAD STATIC FUNC: strlen
@@ -206,6 +216,9 @@ COMPILE FUNC: _ZN20LineMandelCalculator19calculateMandelbrotEv
    -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (53,19)
    -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (54,34)
    -> DELETE: llvm.ssa.copy.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (49,4)
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (75,29)
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (75,37)
    -> llvm.masked.load.v8f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (53,19)
    -> llvm.masked.load.v8f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (54,34)
    -> llvm.masked.load.v8i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc (61,23)

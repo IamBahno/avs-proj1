@@ -18,10 +18,9 @@
 LineMandelCalculator::LineMandelCalculator (unsigned matrixBaseSize, unsigned limit) :
 	BaseMandelCalculator(matrixBaseSize, limit, "LineMandelCalculator")
 {
-	// @TODO find out why 2 *
 	data = (int *)(calloc(height * width,sizeof(int)));
-	real_arr = (float *)(calloc(width, sizeof(float)));
-	img_arr = (float *)(calloc(width, sizeof(float)));
+	real_arr = (float *)(calloc(width * 2, sizeof(float)));
+	img_arr = (float *)(calloc(width * 2, sizeof(float)));
 
 }
 
@@ -34,20 +33,19 @@ LineMandelCalculator::~LineMandelCalculator() {
 
 
 int * LineMandelCalculator::calculateMandelbrot () {
-	// @TODO implement the calculator & return array of integers
 	int *pdata = data;
 	float *real_array = real_arr;
 	float *img_array = img_arr;
 
-	for (int i = 0; i < height; i++)
+	for (int i = 0; i < height / 2; i++)
 	{
 		float y = y_start + i * dy; // current imaginary value
-		//counting iterations
-		bool allOver;
+
+		// variable that allows me to break when all the point in row, breaken out of the < 4 boundary
+		bool all_over = false;
 		for (int k = 0; k < limit; ++k)
 		{
-			allOver = true;
-			#pragma omp simd
+			#pragma omp simd reduction(| : all_over)
 			for (int j = 0; j < width; j++)
 			{
 				float x = x_start + j * dx; // current real value
@@ -63,13 +61,20 @@ int * LineMandelCalculator::calculateMandelbrot () {
 					pdata[i*width+j] += 1;
 					img_array[j] = 2.0f * zReal * zImag + y;
 					real_array[j] = r2 - i2 + x;
-					allOver = false;
+					all_over |= false;
 				}
 			}
-			if(allOver){
+			if(all_over){
 				break;
 			}
 		}
 	}
+
+	//duplicate the second half of the matrix
+    for (int i = 0; i < height / 2; i++) {
+        for (int j = 0; j < width; j++) {
+            pdata[(height - 1 - i) * width + j] = pdata[i * width + j];
+        }
+    }
 	return pdata;
 }
