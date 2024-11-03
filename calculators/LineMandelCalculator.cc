@@ -50,7 +50,6 @@ int * LineMandelCalculator::calculateMandelbrot () {
 	//computint only for half of the picture
 	for (int i = 0; i < height/2; i++)
 	{
-		// float y = y_start + i * dy; // current imaginary value
 		float y = y_axis[i]; // current imaginary value
 
 		//index to line in pdata

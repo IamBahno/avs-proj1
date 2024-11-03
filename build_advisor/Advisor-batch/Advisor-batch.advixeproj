@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
  <cli_project type="bool">true</cli_project>
+ <connectionOption type="string">localhost</connectionOption>
  <rdmgr>
   <timestamp type="u64_t">1730651989</timestamp>
   <hostname type="string">cn14.barbora.it4i.cz</hostname>
@@ -122,4 +123,5 @@
    </workloads>
   </target_settings>
  </All_Configurations-All_Platforms>
+ <contextValues type="bag"/>
 </root>

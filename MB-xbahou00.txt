@@ -3,29 +3,51 @@
 1. Jaká byla dosažena výkonnost v Intel Advisoru pro implementace ref, line a batch
 (v GFLOPS)? (0.5b)
 ==============================================================================
+ref kernel bod: 0.629
+ref v summary: 2.99
+
+line kernel bod: 8.234
+line v summary: 6.43
+
+batch kernel bod: 19.952
+batch v summary: 14.53
 
 
 
 2. Porovnejte implementaci referenčního rešení oproti "Line" a "Batch" implementaci. 
 Jakým způsobem jsou načítána data, proč, a jaký to má vliv na výkon. (1b)
 ==============================================================================
-
+U referenčí se postupně načítají jednotlivé body a pro každý se počítá hodnota.
+U line se načíta celý řádek a pro celý řádek se počítají iterace hodnot,
+které se ukládají do pomocných polí.
+U batch se načítají tily(bloky) řádku a nad nimi se spočítají iterace,
+aby se nemuselo tolik přepisovat v cache.
+Má to pozitivní vliv na výkon programu.
 
 
 3. Porovnejte Roofline všech modelů. Jsou implementace memory 
 bound? Jaká je vaše aritmetická intenzita? Dokázali byste ji přibližně spočítat 
 i ručně a jak? (1b)
 ==============================================================================
-
-
+Ano jsou všchny jsou memory bound.
+L1 aritmetická intenzita v kernel bodě:
+ref: 0.167
+line: 0.138
+batch: 0.285 
+Přibližně se požítá jako GFLOPS děleno počtem bytů s kterými se počíta.
 
 4. Komentujte vliv velikosti cache na výkonnost a chování na větších 
 velikostech domény. (1b)
 ==============================================================================
-
+S větší cache se zvyšuje výkon do jisté horná hranice.
+Protože, se do cache vejde více dat a nemusíme tak často přistupovat do DRAM.
+U velké velikosti domény, kdy se data nemohou rozumně načíst do L3, se výkonnost
+zmenšue zcela zásadně.
 
 
 5. Jaký vliv na výkonnost má symetrie? Lze tento rozdíl pozorovat v Intel Advisor? 
 (nápověda: instrukce) (0.5b)
 ============================================================================== 
-
+Symetrie výsledné matice na výkonnost vliv nemá.
+V Intel Advisoru se pouze čas běhu zmenší zhruba na polovinu.
+GFLOPS atd. v kernel bodu zůstanou stejná. 
