@@ -10,7 +10,8 @@
 #include <algorithm>
 
 #include <stdlib.h>
-
+#include <malloc.h>
+#include <immintrin.h>
 
 #include "LineMandelCalculator.h"
 
@@ -18,54 +19,68 @@
 LineMandelCalculator::LineMandelCalculator (unsigned matrixBaseSize, unsigned limit) :
 	BaseMandelCalculator(matrixBaseSize, limit, "LineMandelCalculator")
 {
-	data = (int *)(calloc(height * width,sizeof(int)));
-	real_arr = (float *)(calloc(width * 2, sizeof(float)));
-	img_arr = (float *)(calloc(width * 2, sizeof(float)));
-
+	data = (int *)(_mm_malloc(height * width * sizeof(int),64));
+	real_arr = (float *)(_mm_malloc(width * sizeof(float),64));
+	img_arr = (float *)(_mm_malloc(width * sizeof(float),64));
+	x_axis = (float *)(_mm_malloc(width * sizeof(float),64));
+	y_axis = (float *)(_mm_malloc((height/2) * sizeof(float),64));
 }
 
 LineMandelCalculator::~LineMandelCalculator() {
-	free(data);
-	free(real_arr);
-	free(img_arr);
+	_mm_free(data);
+	_mm_free(real_arr);
+	_mm_free(img_arr);
+	_mm_free(x_axis);
+	_mm_free(y_axis);
 
 }
 
 
 int * LineMandelCalculator::calculateMandelbrot () {
 	int *pdata = data;
-	float *real_array = real_arr;
-	float *img_array = img_arr;
+
+	// precompute the tick on the axis
+	for(int i = 0; i < height/2;i++){
+		y_axis[i] = y_start + i * dy;
+	}
+	for(int i = 0; i < width;i++){
+		x_axis[i] = x_start + i * dx;
+	}
 
 	//computint only for half of the picture
 	for (int i = 0; i < height/2; i++)
 	{
-		float y = y_start + i * dy; // current imaginary value
+		// float y = y_start + i * dy; // current imaginary value
+		float y = y_axis[i]; // current imaginary value
 
-		// variable that allows me to break when all the point in row, breaken out of the < 4 boundary
-		int is_running = 0;
+		//index to line in pdata
+		int line_in_data = i*width;
+
 		for (int k = 0; k < limit; ++k)
 		{
-			#pragma omp simd reduction(+:is_running)
+			// variable that allows me to break when all the point in row, breaken out of the < 4 boundary
+			int is_running = 0;
+			#pragma omp simd reduction(+:is_running) simdlen(32)
 			for (int j = 0; j < width; j++)
 			{
-				float x = x_start + j * dx; // current real value
+				float x = x_axis[j]; // current real value
 
-				float zReal = (k == 0) ? x : real_array[j];
-				float zImag = (k == 0) ? y : img_array[j];
+				float zReal = (k == 0) ? x : real_arr[j];
+				float zImag = (k == 0) ? y : img_arr[j];
 
 				float r2 = zReal * zReal;
 				float i2 = zImag * zImag;
 
 				if (r2 + i2 < 4.0f)
 				{
-					pdata[i*width+j] += 1;
-					img_array[j] = 2.0f * zReal * zImag + y;
-					real_array[j] = r2 - i2 + x;
+					pdata[line_in_data+j] += 1;
+					img_arr[j] = 2.0f * zReal * zImag + y;
+					real_arr[j] = r2 - i2 + x;
 					is_running += 1;
 				}
 			}
-			if(is_running != width){
+			
+			if(is_running == 0){
 				break;
 			}
 		}
@@ -77,5 +92,6 @@ int * LineMandelCalculator::calculateMandelbrot () {
 			pdata[(height - 1 - i) * width + j] = pdata[i * width + j];
 		}
 	}
+
 	return pdata;
 }

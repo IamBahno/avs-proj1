@@ -1,0 +1,216 @@
+Global optimization report for : _ZN19RefMandelCalculatorC2Ejj
+=================================================================
+
+Global optimization report for : _ZN19RefMandelCalculatorD2Ev
+=================================================================
+
+Global optimization report for : _ZN19RefMandelCalculator19calculateMandelbrotEv
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (48, 2)
+
+    LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (50, 3)
+
+        LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (31, 2)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between zReal [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (40, 19) ] and zReal [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (33, 16) ] 
+            remark #15346: vector dependence: assumed FLOW dependence between zReal [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (40, 19) ] and zReal [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (33, 16) ] 
+            remark #15346: vector dependence: assumed FLOW dependence between zReal [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (40, 19) ] and zReal [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (39, 24) ] 
+            remark #15346: vector dependence: assumed FLOW dependence between zImag [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (39, 32) ] and zImag [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (34, 16) ] 
+            remark #15346: vector dependence: assumed FLOW dependence between zImag [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (39, 32) ] and zImag [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (34, 16) ] 
+            remark #15346: vector dependence: assumed FLOW dependence between zImag [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (39, 32) ] and zImag [ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (39, 16) ] 
+            remark #25439: Loop unrolled with remainder by 2
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_RefMandelCalculator.cc
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: _ZL10mandelbrotIfEiT_S0_i
+
+DEAD STATIC FUNC: _ZN20BaseMandelCalculatorD2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcED2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
+
+DEAD STATIC FUNC: _ZNSaIcEC2ERKS_
+
+DEAD STATIC FUNC: _ZNSaIcEC2Ev
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE4copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6assignERcRKc
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6lengthEPKc
+
+DEAD STATIC FUNC: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_
+
+DEAD STATIC FUNC: _ZNSt14pointer_traitsIPcE10pointer_toERc
+
+DEAD STATIC FUNC: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev
+
+DEAD STATIC FUNC: _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag
+
+DEAD STATIC FUNC: _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_
+
+DEAD STATIC FUNC: _ZSt19__throw_logic_errorPKc
+
+DEAD STATIC FUNC: _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_
+
+DEAD STATIC FUNC: _ZSt9terminatev
+
+DEAD STATIC FUNC: __clang_call_terminate
+
+DEAD STATIC FUNC: __cxa_begin_catch
+
+DEAD STATIC FUNC: __cxa_call_unexpected
+
+DEAD STATIC FUNC: __cxx_global_var_init
+
+DEAD STATIC FUNC: llvm.ssa.copy.f32
+
+DEAD STATIC FUNC: llvm.ssa.copy.i32
+
+DEAD STATIC FUNC: strlen
+
+COMPILE FUNC: _ZN19RefMandelCalculatorC2Ejj
+   -> INLINE: _ZNSaIcEC2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (14,129) (-35<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (156,7) (-15035<=375)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (14,129) (180<=250)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (536,36) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (399,9)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (534,21) (-35<=375)
+         -> INLINE: _ZNSt14pointer_traitsIPcE10pointer_toERc /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (201,9) (-15035<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (534,9) (-40<=375)
+         -> INLINE: _ZNSaIcEC2ERKS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (165,4) (-40<=375)
+            -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (160,9) (-15040<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (539,2) (-14805<=250)
+         -> INLINE: _ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (211,6) (-15030<=487)
+         -> DELETE: _ZSt19__throw_logic_errorPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (212,4)
+         -> INLINE: _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (215,44) (-15035<=487)
+            -> INLINE: _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (142,9) (-15035<=487)
+            -> INLINE: _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (141,14) (-15035<=487)
+         -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (219,14)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (219,6) (-35<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (220,6) (-35<=375)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (225,26) (-30<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (225,6) (10<=250)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (406,9) (5<=250)
+               -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (357,4) (-30<=375)
+               -> INLINE: _ZNSt11char_traitsIcE4copyEPcPKcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (359,4) (-15030<=250)
+                  -> llvm.memcpy.p0.p0.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (437,33)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (232,2) (-10<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (224,2) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (225,22) (-30<=375)
+            -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (225,2) (-15035<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (540,7) (-35<=45)
+   -> EXTERN: _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (14,85)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (14,85) (15<=250)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (672,9) (30<=250)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (239,7) (-25<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (230,16) (-30<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (230,29) (-35<=375)
+               -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (211,9) (-15035<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (240,4) (5<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,35) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,55) (-30<=375)
+            -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,9) (-15010<=375)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (496,13) (-15010<=375)
+                  -> EXTERN: _ZdlPv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (145,2)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (672,23) (-35<=375)
+   -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (14,85) (-35<=375)
+   -> EXTERN: malloc /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (16,17)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (14,85) (15<=45)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (672,9) (30<=250)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (239,7) (-25<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (230,16) (-30<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (230,29) (-35<=375)
+               -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (211,9) (-15035<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (240,4) (5<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,35) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,55) (-30<=375)
+            -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,9) (-15010<=375)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (496,13) (-15010<=375)
+                  -> EXTERN: _ZdlPv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (145,2)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (672,23) (-35<=375)
+   -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (14,85) (-35<=45)
+
+COMPILE FUNC: _ZN19RefMandelCalculatorD2Ev
+   -> EXTERN: free /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (21,2)
+   -> INLINE: _ZN20BaseMandelCalculatorD2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (23,1) (-14970<=325)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (19,7) (30<=250)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (672,9) (30<=250)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (239,7) (-25<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (230,16) (-30<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (230,29) (-35<=375)
+                  -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (211,9) (-15035<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (240,4) (5<=375)
+               -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,35) (-35<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,55) (-30<=375)
+               -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (245,9) (-15010<=375)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (496,13) (-15010<=375)
+                     -> EXTERN: _ZdlPv /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (145,2)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (672,23) (-35<=375)
+
+COMPILE FUNC: _ZN19RefMandelCalculator19calculateMandelbrotEv
+   -> INLINE: _ZL10mandelbrotIfEiT_S0_i /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (55,16) (-14980<=525)
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (40,19)
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (31,29)
+   -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (39,32)
+
+COMPILE FUNC: _GLOBAL__sub_I_RefMandelCalculator.cc
+   -> INLINE: __cxx_global_var_init /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (-14950<=375)
+      -> EXTERN: _ZNSt8ios_base4InitC1Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc (74,25)
+      -> EXTERN: __cxa_atexit /home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc
+
+---- End Inlining Report ------

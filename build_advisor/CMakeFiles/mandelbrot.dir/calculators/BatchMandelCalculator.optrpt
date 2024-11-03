@@ -1,0 +1,383 @@
+Global optimization report for : _ZN21BatchMandelCalculatorC2Ejj
+=================================================================
+
+Global optimization report for : _ZN21BatchMandelCalculatorD2Ev
+=================================================================
+
+Global optimization report for : _ZN21BatchMandelCalculator19calculateMandelbrotEv
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (45, 2)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (46, 3) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 7.000000 
+    remark #15477: vector cost: 2.046875 
+    remark #15478: estimated potential speedup: 3.312500 
+    remark #15309: vectorization support: normalized vectorization overhead 0.968750
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (45, 2)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (48, 2)
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+    remark #15389: vectorization support: unmasked unaligned unit stride store: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (49, 3) ] 
+    remark #15475: --- begin vector loop cost summary ---
+    remark #15476: scalar cost: 7.000000 
+    remark #15477: vector cost: 2.046875 
+    remark #15478: estimated potential speedup: 3.312500 
+    remark #15309: vectorization support: normalized vectorization overhead 0.968750
+    remark #15488: --- end vector loop cost summary ---
+    remark #15447: --- begin vector loop memory reference summary ---
+    remark #15451: unmasked unaligned unit stride stores: 1 
+    remark #15474: --- end vector loop memory reference summary ---
+LOOP END
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (48, 2)
+<Remainder loop for vectorization>
+LOOP END
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (53, 2)
+
+    LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (57, 3)
+
+        LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (59, 4)
+
+            LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (63, 5)
+            <Predicate Optimized v1>
+                remark #25423: Invariant If condition at line 70 hoisted out of this loop
+                remark #25563: Load hoisted out of the loop
+                remark #15301: SIMD LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 32
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (68, 16) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (70, 20) ] 
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (71, 35) ] 
+                remark #15389: vectorization support: masked unaligned unit stride load: pdata [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78, 29) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: pdata [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78, 7) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79, 7) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80, 7) ] 
+                remark #15475: --- begin vector loop cost summary ---
+                remark #15476: scalar cost: 23.000000 
+                remark #15477: vector cost: 3.578125 
+                remark #15478: estimated potential speedup: 6.250000 
+                remark #15309: vectorization support: normalized vectorization overhead 2.781250
+                remark #15570: using scalar loop trip count: 128
+                remark #15488: --- end vector loop cost summary ---
+                remark #15447: --- begin vector loop memory reference summary ---
+                remark #15450: unmasked unaligned unit stride loads: 3 
+                remark #15456: masked unaligned unit stride loads: 1 
+                remark #15457: masked unaligned unit stride stores: 3 
+                remark #15474: --- end vector loop memory reference summary ---
+                remark #25588: Loop has SIMD reduction
+                remark #15590: vectorization support: add reduction with value type int32_t [calculators/BatchMandelCalculator.cc:81:18]
+            LOOP END
+
+            LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (63, 5)
+            <Predicate Optimized v2>
+                remark #25563: Load hoisted out of the loop
+                remark #15301: SIMD LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 32
+                remark #15389: vectorization support: unmasked unaligned unit stride load: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (68, 16) ] 
+                remark #15389: vectorization support: masked unaligned unit stride load: pdata [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78, 29) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: pdata [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78, 7) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79, 7) ] 
+                remark #15389: vectorization support: masked unaligned unit stride store: [ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80, 7) ] 
+                remark #15475: --- begin vector loop cost summary ---
+                remark #15476: scalar cost: 21.000000 
+                remark #15477: vector cost: 3.265625 
+                remark #15478: estimated potential speedup: 6.250000 
+                remark #15309: vectorization support: normalized vectorization overhead 3.046875
+                remark #15570: using scalar loop trip count: 128
+                remark #15488: --- end vector loop cost summary ---
+                remark #15447: --- begin vector loop memory reference summary ---
+                remark #15450: unmasked unaligned unit stride loads: 1 
+                remark #15456: masked unaligned unit stride loads: 1 
+                remark #15457: masked unaligned unit stride stores: 3 
+                remark #15474: --- end vector loop memory reference summary ---
+                remark #25588: Loop has SIMD reduction
+                remark #15590: vectorization support: add reduction with value type int32_t [calculators/BatchMandelCalculator.cc:81:18]
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (93, 2)
+
+    LOOP BEGIN at /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (94, 3)
+        remark #15521: Loop was not vectorized: loop control variable was not identified. Explicitly compute the iteration count before executing the loop or try using canonical loop form from OpenMP specification
+        remark #25478: While loop unrolled by 4
+    LOOP END
+LOOP END
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_BatchMandelCalculator.cc
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: _ZL10_mm_mallocmm
+
+DEAD STATIC FUNC: _ZL8_mm_freePv
+
+DEAD STATIC FUNC: _ZN20BaseMandelCalculatorD2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcED2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
+
+DEAD STATIC FUNC: _ZNSaIcEC2ERKS_
+
+DEAD STATIC FUNC: _ZNSaIcEC2Ev
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE4copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6assignERcRKc
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6lengthEPKc
+
+DEAD STATIC FUNC: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_
+
+DEAD STATIC FUNC: _ZNSt14pointer_traitsIPcE10pointer_toERc
+
+DEAD STATIC FUNC: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev
+
+DEAD STATIC FUNC: _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag
+
+DEAD STATIC FUNC: _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_
+
+DEAD STATIC FUNC: _ZSt19__throw_logic_errorPKc
+
+DEAD STATIC FUNC: _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_
+
+DEAD STATIC FUNC: _ZSt9terminatev
+
+DEAD STATIC FUNC: __clang_call_terminate
+
+DEAD STATIC FUNC: __cxa_begin_catch
+
+DEAD STATIC FUNC: __cxa_call_unexpected
+
+DEAD STATIC FUNC: __cxx_global_var_init
+
+DEAD STATIC FUNC: llvm.directive.region.entry
+
+DEAD STATIC FUNC: llvm.directive.region.exit
+
+DEAD STATIC FUNC: llvm.ssa.copy.f32
+
+DEAD STATIC FUNC: llvm.ssa.copy.i32
+
+DEAD STATIC FUNC: llvm.ssa.copy.i64
+
+DEAD STATIC FUNC: strlen
+
+COMPILE FUNC: _ZN21BatchMandelCalculatorC2Ejj
+   -> INLINE: _ZL10_mm_mallocmm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (23,17)
+      -> EXTERN: posix_memalign /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL10_mm_mallocmm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (24,23)
+      -> EXTERN: posix_memalign /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL10_mm_mallocmm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (25,22)
+      -> EXTERN: posix_memalign /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL10_mm_mallocmm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (26,21)
+      -> EXTERN: posix_memalign /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL10_mm_mallocmm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (27,21)
+      -> EXTERN: posix_memalign /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> DELETE: _ZN20BaseMandelCalculatorD2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (28,1)
+   -> INLINE: _ZNSaIcEC2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (21,46) (-35<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (156,7) (-15035<=375)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2EPKcRKS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (21,46) (180<=250)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (536,36) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (399,9)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (534,21) (-35<=375)
+         -> INLINE: _ZNSt14pointer_traitsIPcE10pointer_toERc /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (201,9) (-15035<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcRKS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (534,9) (-40<=375)
+         -> INLINE: _ZNSaIcEC2ERKS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (165,4) (-40<=375)
+            -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (160,9) (-15040<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (539,2) (-14805<=250)
+         -> INLINE: _ZN9__gnu_cxx17__is_null_pointerIKcEEbPT_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (211,6) (-15030<=487)
+         -> DELETE: _ZSt19__throw_logic_errorPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (212,4)
+         -> INLINE: _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (215,44) (-15035<=487)
+            -> INLINE: _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (142,9) (-15035<=487)
+            -> INLINE: _ZSt10__distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_St26random_access_iterator_tag /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (141,14) (-15035<=487)
+         -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (219,14)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (219,6) (-35<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (220,6) (-35<=375)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (225,26) (-30<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcPKcS7_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (225,6) (10<=250)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (406,9) (5<=250)
+               -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (357,4) (-30<=375)
+               -> INLINE: _ZNSt11char_traitsIcE4copyEPcPKcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (359,4) (-15030<=250)
+                  -> llvm.memcpy.p0.p0.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (437,33)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (232,2) (-10<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (224,2) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (225,22) (-30<=375)
+            -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (225,2) (-15035<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (540,7) (-35<=45)
+   -> EXTERN: _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (21,2)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (21,2) (15<=250)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (672,9) (30<=250)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (239,7) (-25<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (230,16) (-30<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (230,29) (-35<=375)
+               -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (211,9) (-15035<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (240,4) (5<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,35) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,55) (-30<=375)
+            -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,9) (-15010<=375)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (496,13) (-15010<=375)
+                  -> EXTERN: _ZdlPv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (145,2)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (672,23) (-35<=375)
+   -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (21,2) (-35<=375)
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (21,2) (15<=45)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (672,9) (30<=250)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (239,7) (-25<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (230,16) (-30<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (230,29) (-35<=375)
+               -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (211,9) (-15035<=375)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (240,4) (5<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,35) (-35<=375)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,55) (-30<=375)
+            -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,9) (-15010<=375)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (496,13) (-15010<=375)
+                  -> EXTERN: _ZdlPv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (145,2)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (672,23) (-35<=375)
+   -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (21,2) (-35<=45)
+
+COMPILE FUNC: _ZN21BatchMandelCalculatorD2Ev
+   -> INLINE: _ZL8_mm_freePv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (31,2)
+      -> EXTERN: free /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL8_mm_freePv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (32,2)
+      -> EXTERN: free /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL8_mm_freePv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (33,2)
+      -> EXTERN: free /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL8_mm_freePv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (34,2)
+      -> EXTERN: free /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> INLINE: _ZL8_mm_freePv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (35,2)
+      -> EXTERN: free /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> DELETE: __clang_call_terminate /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (31,2)
+   -> INLINE: _ZN20BaseMandelCalculatorD2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (36,1) (-14970<=325)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (19,7) (30<=250)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (672,9) (30<=250)
+            -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (239,7) (-25<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (230,16) (-30<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (230,29) (-35<=375)
+                  -> INLINE: _ZNSt14pointer_traitsIPKcE10pointer_toERS0_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (211,9) (-15035<=375)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (240,4) (5<=375)
+               -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,35) (-35<=375)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,55) (-30<=375)
+               -> INLINE: _ZNSt16allocator_traitsISaIcEE10deallocateERS0_Pcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (245,9) (-15010<=375)
+                  -> INLINE: _ZN9__gnu_cxx13new_allocatorIcE10deallocateEPcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (496,13) (-15010<=375)
+                     -> EXTERN: _ZdlPv /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (145,2)
+         -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (672,23) (-35<=375)
+
+COMPILE FUNC: _ZN21BatchMandelCalculator19calculateMandelbrotEv
+   -> DELETE: llvm.directive.region.entry /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (63,5)
+   -> DELETE: llvm.directive.region.exit /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (63,5)
+   -> DELETE: llvm.vector.reduce.add.v32i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (81,18)
+   -> DELETE: llvm.vector.reduce.add.v32i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (81,18)
+   -> DELETE: llvm.vector.reduce.add.v32i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (81,18)
+   -> llvm.vector.reduce.add.v32i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (81,18)
+   -> DELETE: llvm.ssa.copy.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (45,31)
+   -> DELETE: llvm.ssa.copy.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (48,28)
+   -> DELETE: llvm.ssa.copy.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (68,16)
+   -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (55,13)
+   -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (70,20)
+   -> DELETE: llvm.ssa.copy.f32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (71,35)
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (64,5)
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (94,23)
+   -> DELETE: llvm.ssa.copy.i32 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (94,31)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+   -> llvm.masked.load.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32i32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (78,29)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (79,23)
+   -> llvm.masked.store.v32f32.p0 /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (80,24)
+
+COMPILE FUNC: _GLOBAL__sub_I_BatchMandelCalculator.cc
+   -> INLINE: __cxx_global_var_init /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (-14950<=375)
+      -> EXTERN: _ZNSt8ios_base4InitC1Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc (74,25)
+      -> EXTERN: __cxa_atexit /home/xbahou00/avs/proj1/avs-proj1/calculators/BatchMandelCalculator.cc
+
+---- End Inlining Report ------

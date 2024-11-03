@@ -18,4 +18,6 @@ private:
     int *data;
     float *real_arr;
 	float *img_arr; 
+    float *x_axis;
+    float *y_axis;
 };

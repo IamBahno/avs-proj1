@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc"
+           line_no="31"
+           routine="mandelbrot&lt;float&gt;"
+           is_vectorized="0"
+           self_time="5.179827E+00"
+           total_time="5.179827E+00"
+           trip_counts="10"
+           func_instance="10"
+           priority="0"/>
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc"
+           line_no="50"
+           routine="RefMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="3.200714E-01"
+           total_time="5.539893E+00"
+           trip_counts="12288"
+           func_instance="7"
+           priority="0"/>
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/RefMandelCalculator.cc"
+           line_no="48"
+           routine="RefMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="5.539893E+00"
+           trip_counts="8192"
+           func_instance="9"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

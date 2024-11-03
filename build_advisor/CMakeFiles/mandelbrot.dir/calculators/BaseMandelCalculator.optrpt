@@ -1,0 +1,328 @@
+Global optimization report for : _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+=================================================================
+
+Global optimization report for : _ZN20BaseMandelCalculator4infoERSob
+=================================================================
+
+Global optimization report for : _GLOBAL__sub_I_BaseMandelCalculator.cc
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx13new_allocatorIcED2Ev
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx14__alloc_traitsISaIcEcE17_S_select_on_copyERKS1_
+
+DEAD STATIC FUNC: _ZN9__gnu_cxx17__is_null_pointerIcEEbPT_
+
+DEAD STATIC FUNC: _ZNKSt5ctypeIcE5widenEc
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv
+
+DEAD STATIC FUNC: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
+
+DEAD STATIC FUNC: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc
+
+DEAD STATIC FUNC: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv
+
+DEAD STATIC FUNC: _ZNSaIcEC2ERKS_
+
+DEAD STATIC FUNC: _ZNSolsEPFRSoS_E
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE4copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6assignERcRKc
+
+DEAD STATIC FUNC: _ZNSt11char_traitsIcE6lengthEPKc
+
+DEAD STATIC FUNC: _ZNSt14pointer_traitsIPcE10pointer_toERc
+
+DEAD STATIC FUNC: _ZNSt16allocator_traitsISaIcEE37select_on_container_copy_constructionERKS0_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcOS3_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcS5_S5_
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_construct_auxIPcEEvT_S7_St12__false_type
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm
+
+DEAD STATIC FUNC: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2ERKS4_
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate
+
+DEAD STATIC FUNC: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate
+
+DEAD STATIC FUNC: _ZSt10__distanceIPcENSt15iterator_traitsIT_E15difference_typeES2_S2_St26random_access_iterator_tag
+
+DEAD STATIC FUNC: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_
+
+DEAD STATIC FUNC: _ZSt19__iterator_categoryIPcENSt15iterator_traitsIT_E17iterator_categoryERKS2_
+
+DEAD STATIC FUNC: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+
+DEAD STATIC FUNC: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+
+DEAD STATIC FUNC: _ZSt8distanceIPcENSt15iterator_traitsIT_E15difference_typeES2_S2_
+
+DEAD STATIC FUNC: _ZSt9terminatev
+
+DEAD STATIC FUNC: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+
+DEAD STATIC FUNC: _ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKNSt7__cxx1112basic_stringIS4_S5_T1_EE
+
+DEAD STATIC FUNC: _ZStorSt12_Ios_IostateS_
+
+DEAD STATIC FUNC: __clang_call_terminate
+
+DEAD STATIC FUNC: __cxa_begin_catch
+
+DEAD STATIC FUNC: __cxa_end_catch
+
+DEAD STATIC FUNC: __cxa_rethrow
+
+DEAD STATIC FUNC: __cxx_global_var_init
+
+DEAD STATIC FUNC: strlen
+
+COMPILE FUNC: _ZN20BaseMandelCalculatorC2EjjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+   -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2ERKS4_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (15,127) (225<=250)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC2EPcOS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (457,9) (-40<=375)
+         -> INLINE: _ZNSaIcEC2ERKS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (168,4) (-40<=375)
+            -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (160,9) (-15040<=375)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (459,28) (-30<=375)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (459,45) (-30<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (457,21) (-35<=375)
+         -> INLINE: _ZNSt14pointer_traitsIPcE10pointer_toERc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (201,9) (-15035<=375)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (458,46) (-35<=375)
+      -> INLINE: _ZN9__gnu_cxx14__alloc_traitsISaIcEcE17_S_select_on_copyERKS1_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (458,7) (-15040<=375)
+         -> INLINE: _ZNSt16allocator_traitsISaIcEE37select_on_container_copy_constructionERKS0_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (98,14) (-15040<=375)
+            -> INLINE: _ZNSaIcEC2ERKS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (563,16) (-40<=375)
+               -> INLINE: _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (160,9) (-15040<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (457,9) (-35<=375)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (459,63) (-30<=375)
+      -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (459,9) (-14805<=250)
+         -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_construct_auxIPcEEvT_S7_St12__false_type /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (274,4) (-14805<=250)
+            -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPcEEvT_S7_St20forward_iterator_tag /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (255,11) (-14805<=250)
+               -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (225,26) (-30<=375)
+               -> INLINE: _ZN9__gnu_cxx17__is_null_pointerIcEEbPT_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (211,6) (-15030<=487)
+               -> EXTERN: _ZSt19__throw_logic_errorPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (212,4)
+               -> INLINE: _ZSt8distanceIPcENSt15iterator_traitsIT_E15difference_typeES2_S2_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (215,44) (-15035<=487)
+                  -> INLINE: _ZSt19__iterator_categoryIPcENSt15iterator_traitsIT_E17iterator_categoryERKS2_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (142,9) (-15035<=487)
+                  -> INLINE: _ZSt10__distanceIPcENSt15iterator_traitsIT_E15difference_typeES2_S2_St26random_access_iterator_tag /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (141,14) (-15035<=487)
+               -> EXTERN: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (219,14)
+               -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (219,6) (-35<=375)
+               -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (220,6) (-35<=375)
+               -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_S_copy_charsEPcS5_S5_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (225,6) (10<=250)
+                  -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (401,9) (5<=250)
+                     -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (357,4) (-30<=375)
+                     -> INLINE: _ZNSt11char_traitsIcE4copyEPcPKcm /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (359,4) (-15030<=250)
+                        -> llvm.memcpy.p0.p0.i64 /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (437,33)
+               -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (232,2) (-10<=375)
+                  -> INLINE: _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEm /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (224,2) (-35<=375)
+                  -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (225,22) (-30<=375)
+                  -> INLINE: _ZNSt11char_traitsIcE6assignERcRKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (225,2) (-15035<=375)
+      -> INLINE: _ZN9__gnu_cxx13new_allocatorIcED2Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (459,74) (-35<=45)
+
+COMPILE FUNC: _ZN20BaseMandelCalculator4infoERSob
+   -> INLINE: _ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKNSt7__cxx1112basic_stringIS4_S5_T1_EE /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (26,8) (15<=487)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (6536,43) (-30<=375)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (2333,16) (-30<=375)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (6536,57) (-30<=375)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (6536,14)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (26,17) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (27,8)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (27,21) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (28,8)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (28,17) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (28,24)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (28,34) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (29,8)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (29,17) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (33,8) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> INLINE: _ZNSolsEPFRSoS_E /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (33,92) (-180<=375)
+      -> INLINE: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,34) (85<=250)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (50,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,40) (-14955<=250)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (879,8)
+               -> INDIRECT: /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (880,15)
+         -> EXTERN: _ZNSo3putEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (707,19)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (34,8) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> INLINE: _ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKNSt7__cxx1112basic_stringIS4_S5_T1_EE /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (34,33) (15<=487)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (6536,43) (-30<=375)
+         -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (2333,16) (-30<=375)
+      -> INLINE: _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (6536,57) (-30<=375)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (6536,14)
+   -> INLINE: _ZNSolsEPFRSoS_E /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (34,42) (-180<=375)
+      -> INLINE: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,34) (85<=250)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (50,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,40) (-14955<=250)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (879,8)
+               -> INDIRECT: /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (880,15)
+         -> EXTERN: _ZNSo3putEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (707,19)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (35,8) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (35,33)
+   -> INLINE: _ZNSolsEPFRSoS_E /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (35,46) (-180<=375)
+      -> INLINE: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,34) (85<=250)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (50,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,40) (-14955<=250)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (879,8)
+               -> INDIRECT: /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (880,15)
+         -> EXTERN: _ZNSo3putEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (707,19)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (36,8) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (36,33)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (36,42) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (36,49)
+   -> INLINE: _ZNSolsEPFRSoS_E /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (36,59) (-180<=375)
+      -> INLINE: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,34) (85<=250)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (50,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,40) (-14955<=250)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (879,8)
+               -> INDIRECT: /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (880,15)
+         -> EXTERN: _ZNSo3putEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (707,19)
+   -> INLINE: _ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (37,8) (40<=487)
+      -> INLINE: _ZNSt9basic_iosIcSt11char_traitsIcEE8setstateESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (614,8) (10<=375)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE7rdstateEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,27) (-30<=375)
+         -> INLINE: _ZStorSt12_Ios_IostateS_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,37) (-15035<=487)
+         -> DELETE: _ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (158,15)
+      -> INLINE: _ZNSt11char_traitsIcE6lengthEPKc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (617,29) (-15000<=375)
+         -> DELETE: strlen /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (399,9)
+      -> EXTERN: _ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (616,2)
+   -> EXTERN: _ZNSolsEi /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (37,33)
+   -> INLINE: _ZNSolsEPFRSoS_E /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (37,42) (-180<=375)
+      -> INLINE: _ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (113,9) (175<=325)
+         -> INLINE: _ZNKSt9basic_iosIcSt11char_traitsIcEE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,34) (85<=250)
+            -> INLINE: _ZSt13__check_facetISt5ctypeIcEERKT_PS3_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,16) (-14995<=325)
+               -> EXTERN: _ZSt16__throw_bad_castv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (50,2)
+            -> INLINE: _ZNKSt5ctypeIcE5widenEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (450,40) (-14955<=250)
+               -> EXTERN: _ZNKSt5ctypeIcE13_M_widen_initEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (879,8)
+               -> INDIRECT: /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (880,15)
+         -> EXTERN: _ZNSo3putEc /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,25)
+         -> INLINE: _ZSt5flushIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_ /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (685,14) (0<=487)
+            -> EXTERN: _ZNSo5flushEv /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (707,19)
+
+COMPILE FUNC: _GLOBAL__sub_I_BaseMandelCalculator.cc
+   -> INLINE: __cxx_global_var_init /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (-14950<=375)
+      -> EXTERN: _ZNSt8ios_base4InitC1Ev /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc (74,25)
+      -> EXTERN: __cxa_atexit /home/xbahou00/avs/proj1/avs-proj1/calculators/BaseMandelCalculator.cc
+
+---- End Inlining Report ------

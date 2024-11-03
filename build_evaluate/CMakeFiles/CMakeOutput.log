@@ -1,0 +1,518 @@
+The system is: Linux - 4.18.0-305.25.1.el8_4.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icx 
+Build flags: -O3;-fPIC;-xCORE-AVX512
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is IntelLLVM, found in "/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/3.23.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx 
+Build flags: -O3;-fPIC;-xCORE-AVX512
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is IntelLLVM, found in "/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/3.23.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_885dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_885dc.dir/build.make CMakeFiles/cmTC_885dc.dir/build
+gmake[1]: Entering directory '/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o
+/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icx   -O3 -fPIC -xCORE-AVX512    -v -MD -MT CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -c /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler
+Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icx.cfg
+Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu skylake-avx512 -mllvm -x86-enable-unaligned-vector-move=true -debugger-tuning=gdb -fdebug-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -fclang-abi-compat=17 -resource-dir /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19 -dependency-file CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -sys-header-deps -I/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include -I/apps/all/XZ/5.2.5-GCCcore-11.3.0/include -I/apps/all/cURL/7.83.0-GCCcore-11.3.0/include -I/apps/all/OpenSSL/1.1/include -I/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/apps/all/ncurses/6.3-GCCcore-11.3.0/include -I/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include -I/apps/all/binutils/2.42-GCCcore-13.3.0/include -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O3 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt -floopopt-pipeline=full -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -fintel-advanced-optim -o CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -x c /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /apps/all/libarchive/3.6.1-GCCcore-11.3.0/include
+ /apps/all/XZ/5.2.5-GCCcore-11.3.0/include
+ /apps/all/cURL/7.83.0-GCCcore-11.3.0/include
+ /apps/all/OpenSSL/1.1/include
+ /apps/all/bzip2/1.0.8-GCCcore-11.3.0/include
+ /apps/all/zlib/1.2.12-GCCcore-11.3.0/include
+ /apps/all/ncurses/6.3-GCCcore-11.3.0/include
+ /apps/all/intel-compilers/2024.2.0/tbb/2021.13/include
+ /apps/all/binutils/2.42-GCCcore-13.3.0/include
+ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include
+ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include
+ /usr/local/include
+ /usr/include
+End of search list.
+Linking C executable cmTC_885dc
+/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_885dc.dir/link.txt --verbose=1
+/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icx -O3 -fPIC -xCORE-AVX512   -v CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -o cmTC_885dc 
+Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler
+Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icx.cfg
+Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/apps/all/binutils/2.42-GCCcore-13.3.0/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_885dc /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib -L/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib -L/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib -L/apps/all/OpenSSL/1.1/lib -L/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib -L/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib -L/apps/all/ncurses/6.3-GCCcore-11.3.0/lib -L/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8 -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib -L/apps/all/binutils/2.42-GCCcore-13.3.0/lib CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/../lib64/crtn.o
+gmake[1]: Leaving directory '/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include]
+    add: [/apps/all/XZ/5.2.5-GCCcore-11.3.0/include]
+    add: [/apps/all/cURL/7.83.0-GCCcore-11.3.0/include]
+    add: [/apps/all/OpenSSL/1.1/include]
+    add: [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include]
+    add: [/apps/all/zlib/1.2.12-GCCcore-11.3.0/include]
+    add: [/apps/all/ncurses/6.3-GCCcore-11.3.0/include]
+    add: [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include]
+    add: [/apps/all/binutils/2.42-GCCcore-13.3.0/include]
+    add: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include]
+    add: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include] ==> [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/XZ/5.2.5-GCCcore-11.3.0/include] ==> [/apps/all/XZ/5.2.5-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/cURL/7.83.0-GCCcore-11.3.0/include] ==> [/apps/all/cURL/7.83.0-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/OpenSSL/1.1/include] ==> [/apps/all/OpenSSL/1.1/include]
+  collapse include dir [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include] ==> [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/zlib/1.2.12-GCCcore-11.3.0/include] ==> [/apps/all/zlib/1.2.12-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/ncurses/6.3-GCCcore-11.3.0/include] ==> [/apps/all/ncurses/6.3-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include] ==> [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include]
+  collapse include dir [/apps/all/binutils/2.42-GCCcore-13.3.0/include] ==> [/apps/all/binutils/2.42-GCCcore-13.3.0/include]
+  collapse include dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/include]
+  collapse include dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include;/apps/all/XZ/5.2.5-GCCcore-11.3.0/include;/apps/all/cURL/7.83.0-GCCcore-11.3.0/include;/apps/all/OpenSSL/1.1/include;/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include;/apps/all/zlib/1.2.12-GCCcore-11.3.0/include;/apps/all/ncurses/6.3-GCCcore-11.3.0/include;/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include;/apps/all/binutils/2.42-GCCcore-13.3.0/include;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/include;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include;/usr/local/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_885dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_885dc.dir/build.make CMakeFiles/cmTC_885dc.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icx   -O3 -fPIC -xCORE-AVX512    -v -MD -MT CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -c /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCCompilerABI.c]
+  ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler]
+  ignore line: [Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icx.cfg]
+  ignore line: [Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu skylake-avx512 -mllvm -x86-enable-unaligned-vector-move=true -debugger-tuning=gdb -fdebug-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -fclang-abi-compat=17 -resource-dir /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19 -dependency-file CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -sys-header-deps -I/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include -I/apps/all/XZ/5.2.5-GCCcore-11.3.0/include -I/apps/all/cURL/7.83.0-GCCcore-11.3.0/include -I/apps/all/OpenSSL/1.1/include -I/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/apps/all/ncurses/6.3-GCCcore-11.3.0/include -I/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include -I/apps/all/binutils/2.42-GCCcore-13.3.0/include -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O3 -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt -floopopt-pipeline=full -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -fintel-advanced-optim -o CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -x c /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /apps/all/libarchive/3.6.1-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/XZ/5.2.5-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/cURL/7.83.0-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/OpenSSL/1.1/include]
+  ignore line: [ /apps/all/bzip2/1.0.8-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/zlib/1.2.12-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/ncurses/6.3-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/intel-compilers/2024.2.0/tbb/2021.13/include]
+  ignore line: [ /apps/all/binutils/2.42-GCCcore-13.3.0/include]
+  ignore line: [ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include]
+  ignore line: [ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_885dc]
+  ignore line: [/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_885dc.dir/link.txt --verbose=1]
+  ignore line: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icx -O3 -fPIC -xCORE-AVX512   -v CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -o cmTC_885dc ]
+  ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler]
+  ignore line: [Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icx.cfg]
+  ignore line: [Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/apps/all/binutils/2.42-GCCcore-13.3.0/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_885dc /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib -L/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib -L/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib -L/apps/all/OpenSSL/1.1/lib -L/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib -L/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib -L/apps/all/ncurses/6.3-GCCcore-11.3.0/lib -L/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8 -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib -L/apps/all/binutils/2.42-GCCcore-13.3.0/lib CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -Bstatic -limf -Bdynamic -lm -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc -Bdynamic -ldl -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed -Bstatic -lirc_s -Bdynamic /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/apps/all/binutils/2.42-GCCcore-13.3.0/bin/ld] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_885dc] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o] ==> obj [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+    arg [-L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [-L/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib] ==> dir [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib] ==> dir [/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib] ==> dir [/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/OpenSSL/1.1/lib] ==> dir [/apps/all/OpenSSL/1.1/lib]
+    arg [-L/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib] ==> dir [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib] ==> dir [/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/ncurses/6.3-GCCcore-11.3.0/lib] ==> dir [/apps/all/ncurses/6.3-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8] ==> dir [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+    arg [-L/apps/all/binutils/2.42-GCCcore-13.3.0/lib] ==> dir [/apps/all/binutils/2.42-GCCcore-13.3.0/lib]
+    arg [CMakeFiles/cmTC_885dc.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-Bstatic] ==> search static
+    arg [-lsvml] ==> lib [svml]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-Bstatic] ==> search static
+    arg [-lirng] ==> lib [irng]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-Bstatic] ==> search static
+    arg [-limf] ==> lib [imf]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-Bstatic] ==> search static
+    arg [-lirc] ==> lib [irc]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-Bstatic] ==> search static
+    arg [-lirc_s] ==> lib [irc_s]
+    arg [-Bdynamic] ==> search dynamic
+    arg [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o] ==> obj [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  collapse library dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> [/apps/all/GCCcore/11.3.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> [/apps/all/GCCcore/11.3.0/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib] ==> [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib] ==> [/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib] ==> [/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/OpenSSL/1.1/lib] ==> [/apps/all/OpenSSL/1.1/lib]
+  collapse library dir [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib] ==> [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib] ==> [/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/ncurses/6.3-GCCcore-11.3.0/lib] ==> [/apps/all/ncurses/6.3-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8] ==> [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/binutils/2.42-GCCcore-13.3.0/lib] ==> [/apps/all/binutils/2.42-GCCcore-13.3.0/lib]
+  implicit libs: [svml;irng;imf;m;gcc;gcc_s;irc;dl;gcc;gcc_s;c;gcc;gcc_s;irc_s]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o;/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu;/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/apps/all/GCCcore/11.3.0/lib64;/lib64;/usr/lib64;/apps/all/GCCcore/11.3.0/lib;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/lib;/lib;/usr/lib;/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib;/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib;/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib;/apps/all/OpenSSL/1.1/lib;/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib;/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib;/apps/all/ncurses/6.3-GCCcore-11.3.0/lib;/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8;/apps/all/binutils/2.42-GCCcore-13.3.0/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c0609/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c0609.dir/build.make CMakeFiles/cmTC_c0609.dir/build
+gmake[1]: Entering directory '/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o
+/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx   -O3 -fPIC -xCORE-AVX512    -v -MD -MT CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -c /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler
+Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icpx.cfg
+Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign,preserve-sign -ffp-contract=fast -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu skylake-avx512 -mllvm -x86-enable-unaligned-vector-move=true -debugger-tuning=gdb -fdebug-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -fclang-abi-compat=17 -resource-dir /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19 -dependency-file CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include -I/apps/all/XZ/5.2.5-GCCcore-11.3.0/include -I/apps/all/cURL/7.83.0-GCCcore-11.3.0/include -I/apps/all/OpenSSL/1.1/include -I/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/apps/all/ncurses/6.3-GCCcore-11.3.0/include -I/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include -I/apps/all/binutils/2.42-GCCcore-13.3.0/include -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0 -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O3 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt -floopopt-pipeline=full -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -fintel-advanced-optim -o CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -x c++ /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /apps/all/libarchive/3.6.1-GCCcore-11.3.0/include
+ /apps/all/XZ/5.2.5-GCCcore-11.3.0/include
+ /apps/all/cURL/7.83.0-GCCcore-11.3.0/include
+ /apps/all/OpenSSL/1.1/include
+ /apps/all/bzip2/1.0.8-GCCcore-11.3.0/include
+ /apps/all/zlib/1.2.12-GCCcore-11.3.0/include
+ /apps/all/ncurses/6.3-GCCcore-11.3.0/include
+ /apps/all/intel-compilers/2024.2.0/tbb/2021.13/include
+ /apps/all/binutils/2.42-GCCcore-13.3.0/include
+ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include
+ /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0
+ /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu
+ /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward
+ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include
+ /usr/local/include
+ /usr/include
+End of search list.
+Linking CXX executable cmTC_c0609
+/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0609.dir/link.txt --verbose=1
+/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx -O3 -fPIC -xCORE-AVX512   -v CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c0609 
+Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler
+Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icpx.cfg
+Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/apps/all/binutils/2.42-GCCcore-13.3.0/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c0609 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib -L/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib -L/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib -L/apps/all/OpenSSL/1.1/lib -L/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib -L/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib -L/apps/all/ncurses/6.3-GCCcore-11.3.0/lib -L/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8 -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib -L/apps/all/binutils/2.42-GCCcore-13.3.0/lib CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/../lib64/crtn.o
+gmake[1]: Leaving directory '/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include]
+    add: [/apps/all/XZ/5.2.5-GCCcore-11.3.0/include]
+    add: [/apps/all/cURL/7.83.0-GCCcore-11.3.0/include]
+    add: [/apps/all/OpenSSL/1.1/include]
+    add: [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include]
+    add: [/apps/all/zlib/1.2.12-GCCcore-11.3.0/include]
+    add: [/apps/all/ncurses/6.3-GCCcore-11.3.0/include]
+    add: [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include]
+    add: [/apps/all/binutils/2.42-GCCcore-13.3.0/include]
+    add: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include]
+    add: [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+    add: [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+    add: [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+    add: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include] ==> [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/XZ/5.2.5-GCCcore-11.3.0/include] ==> [/apps/all/XZ/5.2.5-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/cURL/7.83.0-GCCcore-11.3.0/include] ==> [/apps/all/cURL/7.83.0-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/OpenSSL/1.1/include] ==> [/apps/all/OpenSSL/1.1/include]
+  collapse include dir [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include] ==> [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/zlib/1.2.12-GCCcore-11.3.0/include] ==> [/apps/all/zlib/1.2.12-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/ncurses/6.3-GCCcore-11.3.0/include] ==> [/apps/all/ncurses/6.3-GCCcore-11.3.0/include]
+  collapse include dir [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include] ==> [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include]
+  collapse include dir [/apps/all/binutils/2.42-GCCcore-13.3.0/include] ==> [/apps/all/binutils/2.42-GCCcore-13.3.0/include]
+  collapse include dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/include]
+  collapse include dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0] ==> [/apps/all/GCCcore/11.3.0/include/c++/11.3.0]
+  collapse include dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu] ==> [/apps/all/GCCcore/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu]
+  collapse include dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward] ==> [/apps/all/GCCcore/11.3.0/include/c++/11.3.0/backward]
+  collapse include dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include;/apps/all/XZ/5.2.5-GCCcore-11.3.0/include;/apps/all/cURL/7.83.0-GCCcore-11.3.0/include;/apps/all/OpenSSL/1.1/include;/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include;/apps/all/zlib/1.2.12-GCCcore-11.3.0/include;/apps/all/ncurses/6.3-GCCcore-11.3.0/include;/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include;/apps/all/binutils/2.42-GCCcore-13.3.0/include;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/include;/apps/all/GCCcore/11.3.0/include/c++/11.3.0;/apps/all/GCCcore/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu;/apps/all/GCCcore/11.3.0/include/c++/11.3.0/backward;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include;/usr/local/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c0609/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c0609.dir/build.make CMakeFiles/cmTC_c0609.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx   -O3 -fPIC -xCORE-AVX512    -v -MD -MT CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -c /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler]
+  ignore line: [Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icpx.cfg]
+  ignore line: [Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/clang" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -fhalf-no-semantic-interposition -fveclib=SVML -faltmathlib=SVMLAltMathLibrary -mframe-pointer=none -fapprox-func -funsafe-math-optimizations -fno-signed-zeros -mreassociate -freciprocal-math -fdenormal-fp-math=preserve-sign preserve-sign -ffp-contract=fast -fno-rounding-math -complex-range=promoted -mconstructor-aliases -funwind-tables=2 -target-cpu skylake-avx512 -mllvm -x86-enable-unaligned-vector-move=true -debugger-tuning=gdb -fdebug-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/xbahou00/avs/proj1/avs-proj1/build_evaluate/CMakeFiles/CMakeTmp -fclang-abi-compat=17 -resource-dir /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19 -dependency-file CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -I/apps/all/libarchive/3.6.1-GCCcore-11.3.0/include -I/apps/all/XZ/5.2.5-GCCcore-11.3.0/include -I/apps/all/cURL/7.83.0-GCCcore-11.3.0/include -I/apps/all/OpenSSL/1.1/include -I/apps/all/bzip2/1.0.8-GCCcore-11.3.0/include -I/apps/all/zlib/1.2.12-GCCcore-11.3.0/include -I/apps/all/ncurses/6.3-GCCcore-11.3.0/include -I/apps/all/intel-compilers/2024.2.0/tbb/2021.13/include -I/apps/all/binutils/2.42-GCCcore-13.3.0/include -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0 -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward -internal-isystem /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O3 -fdeprecated-macro -ferror-limit 19 -fheinous-gnu-extensions -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -mllvm -disable-hir-generate-mkl-call -mllvm -loopopt -floopopt-pipeline=full -mllvm -intel-abi-compatible=true -D__GCC_HAVE_DWARF2_CFI_ASM=1 -fintel-compatibility -fintel-libirc-allowed -fintel-libimf-allowed -fintel-advanced-optim -o CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -x c++ /apps/all/CMake/3.23.1-GCCcore-11.3.0/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 19.0.0git based upon LLVM 19.0.0git default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /apps/all/libarchive/3.6.1-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/XZ/5.2.5-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/cURL/7.83.0-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/OpenSSL/1.1/include]
+  ignore line: [ /apps/all/bzip2/1.0.8-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/zlib/1.2.12-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/ncurses/6.3-GCCcore-11.3.0/include]
+  ignore line: [ /apps/all/intel-compilers/2024.2.0/tbb/2021.13/include]
+  ignore line: [ /apps/all/binutils/2.42-GCCcore-13.3.0/include]
+  ignore line: [ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/include]
+  ignore line: [ /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+  ignore line: [ /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+  ignore line: [ /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+  ignore line: [ /apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_c0609]
+  ignore line: [/apps/all/CMake/3.23.1-GCCcore-11.3.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c0609.dir/link.txt --verbose=1]
+  ignore line: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/icpx -O3 -fPIC -xCORE-AVX512   -v CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c0609 ]
+  ignore line: [Intel(R) oneAPI DPC++/C++ Compiler 2024.2.0 (2024.2.0.20240602)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler]
+  ignore line: [Configuration file: /apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../icpx.cfg]
+  ignore line: [Found candidate GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Selected GCC installation: /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/apps/all/binutils/2.42-GCCcore-13.3.0/bin/ld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c0609 /lib/../lib64/crt1.o /lib/../lib64/crti.o /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib -L/lib -L/usr/lib -L/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib -L/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib -L/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib -L/apps/all/OpenSSL/1.1/lib -L/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib -L/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib -L/apps/all/ncurses/6.3-GCCcore-11.3.0/lib -L/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8 -L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib -L/apps/all/binutils/2.42-GCCcore-13.3.0/lib CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lsvml -Bdynamic -Bstatic -lirng -Bdynamic -lstdc++ -Bstatic -limf -Bdynamic -lm -lgcc_s -lgcc -Bstatic -lirc -Bdynamic -ldl -lgcc_s -lgcc -lc -lgcc_s -lgcc -Bstatic -lirc_s -Bdynamic /apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/apps/all/binutils/2.42-GCCcore-13.3.0/bin/ld] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c0609] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o] ==> obj [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+    arg [-L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [-L/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib] ==> dir [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib] ==> dir [/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib] ==> dir [/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/OpenSSL/1.1/lib] ==> dir [/apps/all/OpenSSL/1.1/lib]
+    arg [-L/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib] ==> dir [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib] ==> dir [/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/ncurses/6.3-GCCcore-11.3.0/lib] ==> dir [/apps/all/ncurses/6.3-GCCcore-11.3.0/lib]
+    arg [-L/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8] ==> dir [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8]
+    arg [-L/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+    arg [-L/apps/all/binutils/2.42-GCCcore-13.3.0/lib] ==> dir [/apps/all/binutils/2.42-GCCcore-13.3.0/lib]
+    arg [CMakeFiles/cmTC_c0609.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-Bstatic] ==> search static
+    arg [-lsvml] ==> lib [svml]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-Bstatic] ==> search static
+    arg [-lirng] ==> lib [irng]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-Bstatic] ==> search static
+    arg [-limf] ==> lib [imf]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-Bstatic] ==> search static
+    arg [-lirc] ==> lib [irc]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-ldl] ==> lib [dl]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-Bstatic] ==> search static
+    arg [-lirc_s] ==> lib [irc_s]
+    arg [-Bdynamic] ==> search dynamic
+    arg [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o] ==> obj [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+  collapse library dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> [/apps/all/GCCcore/11.3.0/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> [/apps/all/GCCcore/11.3.0/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/bin/compiler/../../opt/compiler/lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/lib]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib] ==> [/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib] ==> [/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib] ==> [/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/OpenSSL/1.1/lib] ==> [/apps/all/OpenSSL/1.1/lib]
+  collapse library dir [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib] ==> [/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib] ==> [/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/ncurses/6.3-GCCcore-11.3.0/lib] ==> [/apps/all/ncurses/6.3-GCCcore-11.3.0/lib]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8] ==> [/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8]
+  collapse library dir [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib] ==> [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib]
+  collapse library dir [/apps/all/binutils/2.42-GCCcore-13.3.0/lib] ==> [/apps/all/binutils/2.42-GCCcore-13.3.0/lib]
+  implicit libs: [svml;irng;stdc++;imf;m;gcc_s;gcc;irc;dl;gcc_s;gcc;c;gcc_s;gcc;irc_s]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o;/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/lib/clang/19/lib/x86_64-unknown-linux-gnu;/apps/all/GCCcore/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/apps/all/GCCcore/11.3.0/lib64;/lib64;/usr/lib64;/apps/all/GCCcore/11.3.0/lib;/apps/all/intel-compilers/2024.2.0/compiler/2024.2/opt/compiler/lib;/lib;/usr/lib;/apps/all/libarchive/3.6.1-GCCcore-11.3.0/lib;/apps/all/XZ/5.2.5-GCCcore-11.3.0/lib;/apps/all/cURL/7.83.0-GCCcore-11.3.0/lib;/apps/all/OpenSSL/1.1/lib;/apps/all/bzip2/1.0.8-GCCcore-11.3.0/lib;/apps/all/zlib/1.2.12-GCCcore-11.3.0/lib;/apps/all/ncurses/6.3-GCCcore-11.3.0/lib;/apps/all/intel-compilers/2024.2.0/tbb/2021.13/lib/intel64/gcc4.8;/apps/all/binutils/2.42-GCCcore-13.3.0/lib]
+  implicit fwks: []
+
+

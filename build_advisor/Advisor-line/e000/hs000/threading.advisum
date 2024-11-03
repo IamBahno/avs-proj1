@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc"
+           line_no="39"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="1.099998E+00"
+           trip_counts="4096"
+           func_instance="10"
+           priority="0"/>
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc"
+           line_no="39"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="1.099998E+00"
+           trip_counts="68"
+           func_instance="9"
+           priority="0"/>
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc"
+           line_no="68"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="1"
+           self_time="9.399521E-01"
+           total_time="9.399521E-01"
+           trip_counts="384"
+           func_instance="11"
+           priority="0"/>
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc"
+           line_no="66"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="1"
+           self_time="1.600457E-01"
+           total_time="1.600457E-01"
+           trip_counts="384"
+           func_instance="7"
+           priority="0"/>
+  <hotspot filename="/home/xbahou00/avs/proj1/avs-proj1/calculators/LineMandelCalculator.cc"
+           line_no="91"
+           routine="LineMandelCalculator::calculateMandelbrot"
+           is_vectorized="0"
+           self_time="1.300000E-01"
+           total_time="1.300000E-01"
+           trip_counts="3072"
+           func_instance="12"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

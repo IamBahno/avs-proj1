@@ -1,0 +1,105 @@
+rm: cannot remove 'tmp_*': No such file or directory
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/xbahou00/avs/proj1/avs-proj1/build
+make: *** No targets specified and no makefile found.  Stop.
+2303529
+pids 2303529
+2303530
+pids 2303529 2303530
+2303532
+pids 2303529 2303530 2303532
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+2303541
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+pids 2303529 2303530 2303532 2303541
+2303543
+pids 2303529 2303530 2303532 2303541 2303543
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+2303546
+pids 2303529 2303530 2303532 2303541 2303543 2303546
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+2303563
+pids 2303529 2303530 2303532 2303541 2303543 2303546 2303563
+2303565
+pids 2303529 2303530 2303532 2303541 2303543 2303546 2303563 2303565
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+2303569
+pids 2303529 2303530 2303532 2303541 2303543 2303546 2303563 2303565 2303569
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303529
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303530
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303532
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303541
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303543
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303546
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303563
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303565
+/var/spool/slurmd/job786218/slurm_script: line 34: ./mandelbrot: No such file or directory
+wait for 2303569
+CALCULATOR;BASE;WIDTH;HEIGHT;ITERS;TIME
