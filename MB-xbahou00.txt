@@ -49,5 +49,5 @@ zmenšue zcela zásadně.
 (nápověda: instrukce) (0.5b)
 ============================================================================== 
 Symetrie výsledné matice na výkonnost vliv nemá.
-V Intel Advisoru se pouze čas běhu zmenší zhruba na polovinu.
+V Intel Advisoru zmenší čas běhu a počet instrukcí.
 GFLOPS atd. v kernel bodu zůstanou stejná. 
