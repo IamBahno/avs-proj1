@@ -1,0 +1,1 @@
+The goal of this project was to optimize the calculation of the Mandelbrot set through code vectorization. The core computation of this set is not fully vectorizable, but with appropriate loop reordering, the addition of other parameters, and optimizations like the use of #pragma omp simd directives, significant speedup can be achieved. 
